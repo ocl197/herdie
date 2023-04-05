@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="herdie.maui.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="logo.png"
+                SemanticProperties.Description="Logo"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Good Morning"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="22"
+                FontFamily="Arial"
+                
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Oliver"
+                FontFamily="Segoe UI"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+
+        </VerticalStackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1" />
+                <ColumnDefinition Width="1" />
+
+
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1" />
+                <RowDefinition Height="1" />
+            </Grid.RowDefinitions>
+            <VerticalStackLayout Grid.Column="0" Grid.Row="0" BackgroundColor="#BB5E11" Spacing="10" VerticalOptions="Center">
+                <Image Source="cow.png" />
+                <Label Text="Cattle" FontSize="20" HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
