@@ -50,11 +50,19 @@
     <ItemGroup>
       <None Remove="Resources\Images\cow.png" />
       <None Remove="Resources\Images\Logo.png" />
+      <None Remove="Resources\Splash\splash.svg" />
     </ItemGroup>
 
     <ItemGroup>
       <MauiImage Include="wwwroot\cow.png" />
       <MauiImage Include="wwwroot\logo.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <MauiSplashScreen Include="Resources\Splash\splash.svg">
+        <Color>#512BD4</Color>
+        <BaseSize>128,128</BaseSize>
+      </MauiSplashScreen>
     </ItemGroup>
 
     <ItemGroup>
